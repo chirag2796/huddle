@@ -195,12 +195,15 @@ Template used for website: MIT Licence is as follows:
         </div>
       </div>
       <!-- End Navbar -->
+
+
+
       <div class="content">
         <div class="row">
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">COVID-19 Ward Occupancy</h5>
+                <h5 class="card-category">Hospital COVID Occupancy</h5>
                 <h3 class="card-title">
                   <div style="width: 7%; float: left; margin-right: 4%;">
                     <img src="../assets/img/virus.png" style="width: 100%;">
@@ -225,7 +228,7 @@ Template used for website: MIT Licence is as follows:
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">ICU Beds Occupancy</h5>
+                <h5 class="card-category">Hospital ICU Bed Occupancy</h5>
                 <h3 class="card-title">
                   <div style="width: 7%; float: left; margin-right: 4%;">
                     <img src="../assets/img/surgery.png" style="width: 100%;">
@@ -250,7 +253,7 @@ Template used for website: MIT Licence is as follows:
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-category">Hospital Occupancy</h5>
+                <h5 class="card-category">Hospital Bed Occupancy</h5>
                 <h3 class="card-title">
                   <div style="width: 7%; float: left; margin-right: 4%;">
                     <img src="../assets/img/patient.png" style="width: 100%;">
@@ -274,6 +277,7 @@ Template used for website: MIT Licence is as follows:
           </div>
         </div>
 
+        <!-- To do list patient transfers -->
         <div class="row">
           <div class="col-12">
             <div class="card card-chart">
@@ -341,6 +345,7 @@ Template used for website: MIT Licence is as follows:
           </div>
         </div>
 
+        <!-- ICU patients -->
         <div class="row">
           <div class="col-12">
             <div class="card card-chart">
@@ -348,7 +353,7 @@ Template used for website: MIT Licence is as follows:
                 <div class="row">
                   <div class="col-sm-6 text-left">
                     <h5 class="card-category">General List</h5>
-                    <h2 class="card-title">Patients</h2>
+                    <h2 class="card-title">ICU Patients</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
@@ -378,9 +383,8 @@ Template used for website: MIT Licence is as follows:
                 </div>
               </div>
               <div class="card-body" style="padding-top: 2px; padding-left: 10px;  color: #78808f; font-size: 120%; padding-bottom: 0;">
-                <button type="button" class="btn btn-primary"><i class="tim-icons icon-simple-add" style="margin-right: 8px;"></i>Add a new Patient</button>
-                <button type="button" class="btn btn-success"><i class="tim-icons icon-notes" style="margin-right: 8px;"></i>Update an existing Patient</button>
-                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;"></i>Request Patient Transfer</button>
+                <button type="button" class="btn btn-success"><i class="tim-icons icon-notes" style="margin-right: 8px;"></i>Request Review on ICU flag</button>
+                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;"></i>Allocate Patient Transfer</button>
               </div>
               <div class="card-body" style="padding-top: 2px;  color: #78808f; font-size: 120%; padding: 1.5%;">
                   <table id="main_patient_table">
@@ -397,58 +401,40 @@ Template used for website: MIT Licence is as follows:
                     </thead>
                     <tbody>
                       <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>12161</td>
+                        <td>CV1926</td>
+                        <td>98.8</td>
+                        <td>120/80</td>
+                        <td>67</td>
+                        <td>92</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
                       </tr>
                       <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>12433</td>
+                        <td>CV1928</td>
+                        <td>100.0</td>
+                        <td>123/81</td>
+                        <td>72</td>
+                        <td>80</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
                       </tr>
                       <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>12122</td>
+                        <td>CV1929</td>
+                        <td>99.1</td>
+                        <td>132/86</td>
+                        <td>77</td>
+                        <td>75</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -457,115 +443,146 @@ Template used for website: MIT Licence is as follows:
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Temperature</h5>
-                <h5 class="card-category" style="float: right;">last updated: 19:23</h5>
-                <h3 class="card-title">
-                  <div style="width: 7%; float: left; margin-right: 5px;">
-                    <img src="../assets/img/temperature.gif" style="width: 100%;">
-                  </div>
-                  99.5° C
-                </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="chartLinePurple"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Heart Rate</h5>
-                <h5 class="card-category" style="float: right;">last updated: 19:23</h5>
-                <h3 class="card-title">
-                  <div style="width: 7%; float: left; margin-right: 5px;">
-                    <img src="../assets/img/beating_heart.gif" style="width: 100%;">
-                  </div>
-                  77 bpm
-                </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="chartLineGreen"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Oxygen Saturation</h5>
-                <h5 class="card-category" style="float: right;">last updated: 19:24</h5>
-                <h3 class="card-title">
-                  <div style="width: 8%; float: left; margin-right: 10px;">
-                    <img src="../assets/img/oxygen.png" style="width: 100%;">
-                  </div>
-                  82%
-                </h3>
-              </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="CountryChart"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- general patients -->
         <div class="row">
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-header ">
                 <div class="row">
                   <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Patient Tracking</h5>
-                    <h2 class="card-title">Hospital Admissions</h2>
+                    <h2 class="card-title">All Patients</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                      <label class="btn btn-sm btn-primary btn-simple active" id="0">
+                      <label class="btn btn-sm btn-primary btn-simple active" id="b0">
                         <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Assigned to me</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="1">
+                      <label class="btn btn-sm btn-primary btn-simple" id="b1">
                         <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Rochester</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-gift-2"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="2">
-                        <input type="radio" class="d-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">New York State</span>
+                      <label class="btn btn-sm btn-primary btn-simple" id="b2">
+                        <input type="radio" class="d-none d-sm-none" name="options">
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Other</span>
                         <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-tap-02"></i>
+                          <i class="tim-icons icon-gift-2"></i>
                         </span>
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="chartBig1"></canvas>
-                </div>
+              <div class="card-body" style="padding-top: 2px; padding-left: 10px;  color: #78808f; font-size: 120%; padding-bottom: 0;">
+                <button type="button" class="btn btn-success"><i class="tim-icons icon-notes" style="margin-right: 8px;"></i>Request Review on ICU flag</button>
+                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;"></i>Allocate Patient Transfer</button>
+              </div>
+              <div class="card-body" style="padding-top: 2px;  color: #78808f; font-size: 120%; padding: 1.5%;">
+                  <table id="main_patient_table">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Bed</th>
+                        <th>Fever Grade</th>
+                        <th>BP</th>
+                        <th>Heart Rate</th>
+                        <th>Oxygen</th>
+                        <th>ICU Flagging</th>
+                        <th>Select</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>12161</td>
+                        <td>CV1926</td>
+                        <td>98.8</td>
+                        <td>120/80</td>
+                        <td>67</td>
+                        <td>92</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12154</td>
+                        <td>CV1927</td>
+                        <td>98.6</td>
+                        <td>118/78</td>
+                        <td>77</td>
+                        <td>83</td>
+                        <td>N</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12433</td>
+                        <td>CV1928</td>
+                        <td>100.0</td>
+                        <td>123/81</td>
+                        <td>72</td>
+                        <td>80</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>13777</td>
+                        <td>GW211</td>
+                        <td>97.7</td>
+                        <td>121/80</td>
+                        <td>75</td>
+                        <td>88</td>
+                        <td>N</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12122</td>
+                        <td>CV1929</td>
+                        <td>99.1</td>
+                        <td>132/86</td>
+                        <td>77</td>
+                        <td>75</td>
+                        <td>Y</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>13434</td>
+                        <td>GW167</td>
+                        <td>98.5</td>
+                        <td>120/81</td>
+                        <td>83</td>
+                        <td>79</td>
+                        <td>N</td>
+                        <td>
+                          <td><input type="checkbox" />&nbsp;</td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- task table -->
         <div class="row">
-          <div class="col-lg-6 col-md-12">
+          <div class="col-12">
             <div class="card card-tasks">
               <div class="card-header ">
-                <h6 class="title d-inline">Tasks(5)</h6>
+                <h6 class="title d-inline">Tasks(3)</h6>
                 <p class="card-category d-inline">today</p>
                 <div class="dropdown">
                   <button type="button" class="btn btn-link dropdown-toggle btn-icon" data-toggle="dropdown">
@@ -651,138 +668,12 @@ Template used for website: MIT Licence is as follows:
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="card ">
-              <div class="card-header">
-                <h4 class="card-title"> Staff on duty</h4>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table tablesorter " id="">
-                    <thead class=" text-primary">
-                      <tr>
-                        <th>
-                          Name
-                        </th>
-                        <th>
-                          Designation
-                        </th>
-                        <th>
-                          Assigned to
-                        </th>
-                        <th class="text-center">
-                          Capacity
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          Dakota Rice
-                        </td>
-                        <td>
-                          Oncologist
-                        </td>
-                        <td>
-                          CC2417
-                        </td>
-                        <td class="text-center">
-                          85%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Nurse
-                        </td>
-                        <td>
-                          CV192
-                        </td>
-                        <td class="text-center">
-                          100%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <td>
-                          Physician
-                        </td>
-                        <td>
-                          CV192
-                        </td>
-                        <td class="text-center">
-                          100%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
-                        </td>
-                        <td>
-                          Physician
-                        </td>
-                        <td>
-                          CV191
-                        </td>
-                        <td class="text-center">
-                          90%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <td>
-                          Nurse
-                        </td>
-                        <td>
-                          GW1
-                        </td>
-                        <td class="text-center">
-                          90%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Cardiologist
-                        </td>
-                        <td>
-                          CV192
-                        </td>
-                        <td class="text-center">
-                          60%
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Ophthalmologist
-                        </td>
-                        <td>
-                          CV191
-                        </td>
-                        <td class="text-center">
-                          100%
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
-<!--      <footer class="footer">-->
+
+
+      <!--      <footer class="footer">-->
 <!--        <div class="container-fluid">-->
 <!--          <ul class="nav">-->
 <!--            <li class="nav-item">-->
