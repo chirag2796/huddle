@@ -180,6 +180,32 @@ Template used for website: MIT Licence is as follows:
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
+                <h5 class="card-category">Hospital Bed Occupancy</h5>
+                <h3 class="card-title">
+                  <div style="width: 7%; float: left; margin-right: 4%;">
+                    <img src="../assets/img/patient.png" style="width: 100%;">
+                  </div>
+                  1235 / 2095
+                </h3>
+              </div>
+              <div class="card-body">
+                <!--                      <h3 class="progress-title">HTML5</h3>-->
+                <div class="progress-outer" style="padding: 0px 10px;">
+                  <div class="progress" style="width: 80%;">
+                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:60%; background-color: #0b0"></div>
+                    <div class="progress-value" style="top: -133%; right: 5%;"><span>60</span>%</div>
+                  </div>
+                </div>
+                <!--                <div class="chart-area">-->
+                <!--                  <canvas id="chartLinePurple"></canvas>-->
+                <!--                </div>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
                 <h5 class="card-category">Hospital COVID Occupancy</h5>
                 <h3 class="card-title">
                   <div style="width: 7%; float: left; margin-right: 4%;">
@@ -227,99 +253,6 @@ Template used for website: MIT Licence is as follows:
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Hospital Bed Occupancy</h5>
-                <h3 class="card-title">
-                  <div style="width: 7%; float: left; margin-right: 4%;">
-                    <img src="../assets/img/patient.png" style="width: 100%;">
-                  </div>
-                  1235 / 2095
-                </h3>
-              </div>
-              <div class="card-body">
-                <!--                      <h3 class="progress-title">HTML5</h3>-->
-                <div class="progress-outer" style="padding: 0px 10px;">
-                  <div class="progress" style="width: 80%;">
-                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:60%; background-color: #0b0"></div>
-                    <div class="progress-value" style="top: -133%; right: 5%;"><span>60</span>%</div>
-                  </div>
-                </div>
-                <!--                <div class="chart-area">-->
-                <!--                  <canvas id="chartLinePurple"></canvas>-->
-                <!--                </div>-->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- To do list patient transfers -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">To Do</h5>
-                    <h2 class="card-title">Patient Transfers</h2>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                      <label class="btn btn-sm btn-primary btn-simple active" id="a0">
-                        <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
-                        </span>
-                      </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="a1">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Other</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body" style="padding-top: 2px;  color: #78808f; font-size: 120%;">
-                  <div style="width: 50%; float: left; padding: 0px 12px; border-spacing: 10px;">
-                    <div style="display: table-row;">
-                      <div style="display: table-cell">Patients to Move Now</div>
-                      <div id="num_patients_to_move_now" style="display: table-cell; color: #ddd;">23</div>
-                    </div>
-                    <div style="display: table-row;">
-                      <div style="display: table-cell">Keep as Buffer</div>
-                      <div id="num_keep_as_buffer" style="display: table-cell; color: #ddd;">56</div>
-                    </div>
-                    <div style="display: table-row;">
-                      <div style="display: table-cell">Patients to Release</div>
-                      <div id="num_patients_to_release" style="display: table-cell; color: #ddd;">52</div>
-                    </div>
-
-<!--                    <div>Keep as Buffer</div>-->
-<!--                    <div>Patients to Release</div>-->
-                  </div>
-                  <div style="width: 50%; float: left;  padding: 0px 12px; border-spacing: 3px;">
-                    <div style="width: 100%; height: 100%; padding: 10px; border: 1px #5e6574 solid; border-radius: 6px; box-shadow: 0 0 6px #5e6574">
-                      <div style="display: table-row; color: #eee;">
-                        <div style="display: table-cell">Upcoming Transfers</div>
-                      </div>
-                      <div style="display: table-row;">
-                        <div style="display: table-cell">Inbound Transfers</div>
-                        <div id="num_inbound_transfers" style="display: table-cell; color: #ddd;">56</div>
-                      </div>
-                      <div style="display: table-row;">
-                        <div style="display: table-cell">Outbound Transfers</div>
-                        <div id="num_outbound_transfers" style="display: table-cell; color: #ddd;">52</div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- ICU patients -->
@@ -332,36 +265,11 @@ Template used for website: MIT Licence is as follows:
                     <h5 class="card-category">ICU Patients</h5>
                     <h2 class="card-title">Priority</h2>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                      <label class="btn btn-sm btn-primary btn-simple active" id="b0">
-                        <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Assigned to me</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
-                        </span>
-                      </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="b1">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="b2">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Other</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div class="card-body" style="padding-top: 2px; padding-left: 10px;  color: #78808f; font-size: 120%; padding-bottom: 0;">
                 <button type="button" class="btn btn-success"><i class="tim-icons icon-notes" style="margin-right: 8px;"></i>Request Review on ICU flag</button>
-                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;"></i>Allocate Patient Transfer</button>
+                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;" onclick="location.href='HAallocate.html'"></i>Allocate Patient Transfer</button>
               </div>
               <div class="card-body" style="padding-top: 2px;  color: #78808f; font-size: 120%; padding: 1.5%;">
                   <table id="main_patient_table">
@@ -374,6 +282,7 @@ Template used for website: MIT Licence is as follows:
                         <th>Heart Rate</th>
                         <th>Oxygen</th>
                         <th>Priority Group</th>
+                        <th> Select </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -384,117 +293,6 @@ Template used for website: MIT Licence is as follows:
                         <td>120/80</td>
                         <td>67</td>
                         <td>92</td>
-                        <td>1</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12433</td>
-                        <td>CV1928</td>
-                        <td>100.0</td>
-                        <td>123/81</td>
-                        <td>72</td>
-                        <td>80</td>
-                        <td>1</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12122</td>
-                        <td>CV1929</td>
-                        <td>99.1</td>
-                        <td>132/86</td>
-                        <td>77</td>
-                        <td>75</td>
-                        <td>1</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- general patients -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card card-chart">
-              <div class="card-header ">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">ICU Patients</h5>
-                    <h2 class="card-title">All</h2>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                      <label class="btn btn-sm btn-primary btn-simple active" id="b0">
-                        <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Assigned to me</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
-                        </span>
-                      </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="b1">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="b2">
-                        <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Other</span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body" style="padding-top: 2px; padding-left: 10px;  color: #78808f; font-size: 120%; padding-bottom: 0;">
-                <button type="button" class="btn btn-success"><i class="tim-icons icon-notes" style="margin-right: 8px;"></i>Request Review on ICU flag</button>
-                <button type="button" class="btn btn-danger"><i class="tim-icons icon-send" style="margin-right: 8px;"></i>Allocate Patient Transfer</button>
-              </div>
-              <div class="card-body" style="padding-top: 2px;  color: #78808f; font-size: 120%; padding: 1.5%;">
-                  <table id="main_patient_table">
-                    <thead>
-                      <tr>
-                        <th>Id</th>
-                        <th>Bed</th>
-                        <th>Fever Grade</th>
-                        <th>BP</th>
-                        <th>Heart Rate</th>
-                        <th>Oxygen</th>
-                        <th>Priority Group</th>
-                        <th>Select</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>12161</td>
-                        <td>CV1926</td>
-                        <td>98.8</td>
-                        <td>120/80</td>
-                        <td>67</td>
-                        <td>92</td>
-                        <td>1</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12154</td>
-                        <td>CV1927</td>
-                        <td>98.6</td>
-                        <td>118/78</td>
-                        <td>77</td>
-                        <td>83</td>
                         <td>2</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
@@ -513,18 +311,6 @@ Template used for website: MIT Licence is as follows:
                         </td>
                       </tr>
                       <tr>
-                        <td>13777</td>
-                        <td>GW211</td>
-                        <td>97.7</td>
-                        <td>121/80</td>
-                        <td>75</td>
-                        <td>88</td>
-                        <td>3</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
-                      <tr>
                         <td>12122</td>
                         <td>CV1929</td>
                         <td>99.1</td>
@@ -536,117 +322,11 @@ Template used for website: MIT Licence is as follows:
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
                       </tr>
-                      <tr>
-                        <td>13434</td>
-                        <td>GW167</td>
-                        <td>98.5</td>
-                        <td>120/81</td>
-                        <td>83</td>
-                        <td>79</td>
-                        <td>4</td>
-                        <td>
-                          <td><input type="checkbox" />&nbsp;</td>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- task table -->
-        <div class="row">
-          <div class="col-12">
-            <div class="card card-tasks">
-              <div class="card-header ">
-                <h6 class="title d-inline">Tasks(3)</h6>
-                <p class="card-category d-inline">today</p>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-link dropdown-toggle btn-icon" data-toggle="dropdown">
-                    <i class="tim-icons icon-settings-gear-63"></i>
-                  </button>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#pablo">Action</a>
-                    <a class="dropdown-item" href="#pablo">Another action</a>
-                    <a class="dropdown-item" href="#pablo">Something else</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body ">
-                <div class="table-full-width table-responsive">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="">
-                              <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="title">Update the Covid-19 WHO data</p>
-                          <p class="text-muted">To be sent by Apr 30, 8:47 AM EDT</p>
-                        </td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="" checked="">
-                              <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="title">Ventilator check</p>
-                          <p class="text-muted">All th ventilators in ICU wards must be validated as per United States Department of Health & Human Services regualtions.</p>
-                        </td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="">
-                              <span class="form-check-sign">
-                                <span class="check"></span>
-                              </span>
-                            </label>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="title">Retake antibody tests for all CV192 patients</p>
-                          <p class="text-muted">Antibody tests must be retaken before EOD 29 Apr for all patients in the CV192 ward.</p>
-                        </td>
-                        <td class="td-actions text-right">
-                          <button type="button" rel="tooltip" title="" class="btn btn-link" data-original-title="Edit Task">
-                            <i class="tim-icons icon-pencil"></i>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
