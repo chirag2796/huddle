@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Adequate-ExtraLight;
+    src: url(fonts/Adequate-ExtraLight.ttf);
+}
+
+/*Progress bars*/
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+}
+.progress-outer{
+    /*background: #fff;*/
+    /*padding: 5px 60px 5px 5px;*/
+    /*border: 5px solid #bebfbf;*/
+    border-radius: 45px;
+    /*margin-bottom: 20px;*/
+    position: relative;
+}
+.progress{
+    /*background: #bebfbf;*/
+    border-radius: 20px;
+    /*margin: 0;*/
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    box-shadow: none;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b7880;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+
+/*Datatbles dark*/
+
+.table-container{
+    padding: 0rem 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.small-heading{
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+
+.table-row-fixed{
+    background-color: #e1e6ea !important;
+    color: #000 !important;
+}
+
+.table-row-fixed:hover{
+    background-color: #d2dae0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    color:#fff !important;
+}
+
+/*table.custom_table thead th {
+    padding: 8px 8px;
+    font-size: 1.15rem;
+}*/
+
+table.custom_table tbody td {
+    padding: 8px 8px;
+    font-size: 1.24rem;
+}
+
+table.clickable-row tbody tr{
+    /*cursor:pointer;*/
+}
+
+
+/*#ir_analysis_results_table_div_All table.dataTable tbody th, #ir_analysis_results_table_div_All table.dataTable tbody td{*/
+/*padding: 0rem;*/
+/*}*/
+
+/*table th select{*/
+/*width:100%;*/
+/*}*/
+
+table.dataTable tbody tr {
+    background-color: #1b2838 !important;
+    cursor: pointer;
+}
+
+table.dataTable tbody tr:hover{
+    background: #22344b !important;
+}
+
+table.dataTable tbody tr.odd{
+    background-color: #162231 !important;
+}
+
+table.dataTable tbody tr.odd:hover{
+    background: #22344b !important;
+}
+
+thead tr{
+    color:#ddd;
+}
+
+
+
+#main_patient_table table tbody tr td{
+    padding: 0px 4px !important;
+}
+.dataTable tbody tr td{
+    color:#ccc !important;
+}
+a .paginate_button.current{
+    color:#000 !important;
+}
