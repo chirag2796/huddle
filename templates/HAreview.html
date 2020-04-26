@@ -45,52 +45,29 @@ Template used for website: MIT Licence is as follows:
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
     -->
-      <div class="sidebar-wrapper">
-        <div class="logo">
-          <a href="javascript:void(0)" class="simple-text logo-mini">
-            FN
+    <div class="sidebar-wrapper">
+      <div class="logo">
+        <a href="javascript:void(0)" class="simple-text logo-mini">
+          FN
+        </a>
+        <a href="javascript:void(0)" class="simple-text logo-normal">
+          Florence N.
+        </a>
+      </div>
+      <ul class="nav" style="font-size: 140% !important;">
+        <li class="active ">
+          <a href="./dashboard.html">
+            <i class="tim-icons icon-chart-pie-36"></i>
+            <p style="font-size: 140% !important;">Dashboard</p>
           </a>
-          <a href="javascript:void(0)" class="simple-text logo-normal">
-            Florence N.
+        </li>
+        <li>
+          <a href="./notifications.html">
+            <i class="tim-icons icon-send"></i>
+            <p style="font-size: 140% !important;">Patient Transfers</p>
           </a>
-        </div>
-        <ul class="nav" style="font-size: 140% !important;">
-          <li class="active ">
-            <a href="./dashboard.html">
-              <i class="tim-icons icon-chart-pie-36"></i>
-              <p style="font-size: 140% !important;">Dashboard</p>
-            </a>
-          </li>
-          <li>
-            <a href="./icons.html">
-              <i class="tim-icons icon-simple-add"></i>
-              <p style="font-size: 140% !important;">Add Patient</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class="tim-icons icon-notes"></i>
-              <p style="font-size: 140% !important;">Update Patient</p>
-            </a>
-          </li>
-          <li>
-            <a href="./notifications.html">
-              <i class="tim-icons icon-send"></i>
-              <p style="font-size: 140% !important;">Transfer Patient</p>
-            </a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
-              <p style="font-size: 140% !important;">User Profile</p>
-            </a>
-          </li>
-          <li>
-            <a href="./tables.html">
-              <i class="tim-icons icon-atom"></i>
-              <p style="font-size: 140% !important;">News</p>
-            </a>
-          </li>
+        </li>
+
 <!--          <li>-->
 <!--            <a href="./typography.html">-->
 <!--              <i class="tim-icons icon-align-center"></i>-->
@@ -127,7 +104,7 @@ Template used for website: MIT Licence is as follows:
             <div style="width: 10%;">
               <img src="../assets/img/ai_loader_alpha.gif" style="width: 100%;">
             </div>
-            <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 2.5%;">HUDDLE</a>
+            <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 3.5%;">HUDDLE</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -135,9 +112,9 @@ Template used for website: MIT Licence is as follows:
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse" id="navigation">
-            <div style="width: 15%; float: left;">
-              <img src="../assets/img/hospital-logo.png" style="width: 100%;">
-            </div>
+            <!-- div style="width: 15%; float: left;" -->
+              <!-- img src="../assets/img/hospital-logo.png" style="width: 100%;" -->
+            <!-- /div -->
             <ul class="navbar-nav ml-auto">
               <li class="search-bar input-group">
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
@@ -291,7 +268,7 @@ Template used for website: MIT Licence is as follows:
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                       <label class="btn btn-sm btn-primary btn-simple active" id="a0">
                         <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-single-02"></i>
                         </span>
@@ -352,8 +329,8 @@ Template used for website: MIT Licence is as follows:
               <div class="card-header ">
                 <div class="row">
                   <div class="col-sm-6 text-left">
-                    <h5 class="card-category">General List</h5>
-                    <h2 class="card-title">ICU Patients</h2>
+                    <h5 class="card-category">ICU Patients</h5>
+                    <h2 class="card-title">Priority</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
@@ -366,7 +343,7 @@ Template used for website: MIT Licence is as follows:
                       </label>
                       <label class="btn btn-sm btn-primary btn-simple" id="b1">
                         <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-gift-2"></i>
                         </span>
@@ -396,7 +373,7 @@ Template used for website: MIT Licence is as follows:
                         <th>BP</th>
                         <th>Heart Rate</th>
                         <th>Oxygen</th>
-                        <th>ICU Flagging</th>
+                        <th>Priority Group</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -407,7 +384,7 @@ Template used for website: MIT Licence is as follows:
                         <td>120/80</td>
                         <td>67</td>
                         <td>92</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -419,7 +396,7 @@ Template used for website: MIT Licence is as follows:
                         <td>123/81</td>
                         <td>72</td>
                         <td>80</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -431,7 +408,7 @@ Template used for website: MIT Licence is as follows:
                         <td>132/86</td>
                         <td>77</td>
                         <td>75</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -450,7 +427,8 @@ Template used for website: MIT Licence is as follows:
               <div class="card-header ">
                 <div class="row">
                   <div class="col-sm-6 text-left">
-                    <h2 class="card-title">All Patients</h2>
+                    <h5 class="card-category">ICU Patients</h5>
+                    <h2 class="card-title">All</h2>
                   </div>
                   <div class="col-sm-6">
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
@@ -463,7 +441,7 @@ Template used for website: MIT Licence is as follows:
                       </label>
                       <label class="btn btn-sm btn-primary btn-simple" id="b1">
                         <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-gift-2"></i>
                         </span>
@@ -493,7 +471,7 @@ Template used for website: MIT Licence is as follows:
                         <th>BP</th>
                         <th>Heart Rate</th>
                         <th>Oxygen</th>
-                        <th>ICU Flagging</th>
+                        <th>Priority Group</th>
                         <th>Select</th>
                       </tr>
                     </thead>
@@ -505,7 +483,7 @@ Template used for website: MIT Licence is as follows:
                         <td>120/80</td>
                         <td>67</td>
                         <td>92</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -517,7 +495,7 @@ Template used for website: MIT Licence is as follows:
                         <td>118/78</td>
                         <td>77</td>
                         <td>83</td>
-                        <td>N</td>
+                        <td>2</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -529,7 +507,7 @@ Template used for website: MIT Licence is as follows:
                         <td>123/81</td>
                         <td>72</td>
                         <td>80</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -541,7 +519,7 @@ Template used for website: MIT Licence is as follows:
                         <td>121/80</td>
                         <td>75</td>
                         <td>88</td>
-                        <td>N</td>
+                        <td>3</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -553,7 +531,7 @@ Template used for website: MIT Licence is as follows:
                         <td>132/86</td>
                         <td>77</td>
                         <td>75</td>
-                        <td>Y</td>
+                        <td>1</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>
@@ -565,7 +543,7 @@ Template used for website: MIT Licence is as follows:
                         <td>120/81</td>
                         <td>83</td>
                         <td>79</td>
-                        <td>N</td>
+                        <td>4</td>
                         <td>
                           <td><input type="checkbox" />&nbsp;</td>
                         </td>

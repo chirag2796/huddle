@@ -62,35 +62,12 @@ Template used for website: MIT Licence is as follows:
             </a>
           </li>
           <li>
-            <a href="./icons.html">
-              <i class="tim-icons icon-simple-add"></i>
-              <p style="font-size: 140% !important;">Add Patient</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class="tim-icons icon-notes"></i>
-              <p style="font-size: 140% !important;">Update Patient</p>
-            </a>
-          </li>
-          <li>
             <a href="./notifications.html">
               <i class="tim-icons icon-send"></i>
-              <p style="font-size: 140% !important;">Transfer Patient</p>
+              <p style="font-size: 140% !important;">Patient Transfers</p>
             </a>
           </li>
-          <li>
-            <a href="./user.html">
-              <i class="tim-icons icon-single-02"></i>
-              <p style="font-size: 140% !important;">User Profile</p>
-            </a>
-          </li>
-          <li>
-            <a href="./tables.html">
-              <i class="tim-icons icon-atom"></i>
-              <p style="font-size: 140% !important;">News</p>
-            </a>
-          </li>
+
 <!--          <li>-->
 <!--            <a href="./typography.html">-->
 <!--              <i class="tim-icons icon-align-center"></i>-->
@@ -127,7 +104,7 @@ Template used for website: MIT Licence is as follows:
             <div style="width: 10%;">
               <img src="../assets/img/ai_loader_alpha.gif" style="width: 100%;">
             </div>
-            <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 2.5%;">HUDDLE</a>
+            <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 3.5%;">HUDDLE</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -135,9 +112,9 @@ Template used for website: MIT Licence is as follows:
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse" id="navigation">
-            <div style="width: 15%; float: left;">
-              <img src="../assets/img/hospital-logo.png" style="width: 100%;">
-            </div>
+            <!-- div style="width: 15%; float: left;" -->
+              <!-- img src="../assets/img/hospital-logo.png" style="width: 100%;" -->
+            <!-- /div -->
             <ul class="navbar-nav ml-auto">
               <li class="search-bar input-group">
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split" ></i>
@@ -195,8 +172,35 @@ Template used for website: MIT Licence is as follows:
         </div>
       </div>
       <!-- End Navbar -->
+
+      
       <div class="content">
         <div class="row">
+          <div class="col-lg-4">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-category">Regional Hospital Occupancy</h5>
+                <h3 class="card-title">
+                  <div style="width: 7%; float: left; margin-right: 4%;">
+                    <img src="../assets/img/patient.png" style="width: 100%;">
+                  </div>
+                  25560 / 45000
+                </h3>
+              </div>
+              <div class="card-body">
+                <!--                      <h3 class="progress-title">HTML5</h3>-->
+                <div class="progress-outer" style="padding: 0px 10px;">
+                  <div class="progress" style="width: 80%;">
+                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:57%; background-color: #0b0"></div>
+                    <div class="progress-value" style="top: -133%; right: 5%;"><span>57</span>%</div>
+                  </div>
+                </div>
+                <!--                <div class="chart-area">-->
+                <!--                  <canvas id="chartLinePurple"></canvas>-->
+                <!--                </div>-->
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4">
             <div class="card card-chart">
               <div class="card-header">
@@ -205,15 +209,15 @@ Template used for website: MIT Licence is as follows:
                   <div style="width: 7%; float: left; margin-right: 4%;">
                     <img src="../assets/img/virus.png" style="width: 100%;">
                   </div>
-                  375 / 500
+                  7670 / 9000
                 </h3>
               </div>
               <div class="card-body">
 <!--                      <h3 class="progress-title">HTML5</h3>-->
                       <div class="progress-outer" style="padding: 0px 10px;">
                         <div class="progress" style="width: 80%;">
-                          <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:75%; background-color: #cca72b"></div>
-                          <div class="progress-value" style="top: -133%; right: 5%;"><span>75</span>%</div>
+                          <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:85%; background-color: #cca72b"></div>
+                          <div class="progress-value" style="top: -133%; right: 5%;"><span>85</span>%</div>
                         </div>
                       </div>
 <!--                <div class="chart-area">-->
@@ -230,40 +234,15 @@ Template used for website: MIT Licence is as follows:
                   <div style="width: 7%; float: left; margin-right: 4%;">
                     <img src="../assets/img/surgery.png" style="width: 100%;">
                   </div>
-                  364 / 400
+                  12960 / 14000
                 </h3>
               </div>
               <div class="card-body">
                 <!--                      <h3 class="progress-title">HTML5</h3>-->
                 <div class="progress-outer" style="padding: 0px 10px;">
                   <div class="progress" style="width: 80%;">
-                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:91%; background-color: #b00;"></div>
-                    <div class="progress-value" style="top: -133%; right: 5%;"><span>91</span>%</div>
-                  </div>
-                </div>
-                <!--                <div class="chart-area">-->
-                <!--                  <canvas id="chartLinePurple"></canvas>-->
-                <!--                </div>-->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-chart">
-              <div class="card-header">
-                <h5 class="card-category">Regional Hospital Occupancy</h5>
-                <h3 class="card-title">
-                  <div style="width: 7%; float: left; margin-right: 4%;">
-                    <img src="../assets/img/patient.png" style="width: 100%;">
-                  </div>
-                  1235 / 2095
-                </h3>
-              </div>
-              <div class="card-body">
-                <!--                      <h3 class="progress-title">HTML5</h3>-->
-                <div class="progress-outer" style="padding: 0px 10px;">
-                  <div class="progress" style="width: 80%;">
-                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:60%; background-color: #0b0"></div>
-                    <div class="progress-value" style="top: -133%; right: 5%;"><span>60</span>%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:93%; background-color: #b00;"></div>
+                    <div class="progress-value" style="top: -133%; right: 5%;"><span>93</span>%</div>
                   </div>
                 </div>
                 <!--                <div class="chart-area">-->
@@ -287,7 +266,7 @@ Template used for website: MIT Licence is as follows:
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                       <label class="btn btn-sm btn-primary btn-simple active" id="a0">
                         <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-single-02"></i>
                         </span>
@@ -515,21 +494,21 @@ Template used for website: MIT Licence is as follows:
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                       <label class="btn btn-sm btn-primary btn-simple active" id="0">
                         <input type="radio" name="options" checked>
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Mayo Clinic</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Clinic</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-single-02"></i>
                         </span>
                       </label>
                       <label class="btn btn-sm btn-primary btn-simple" id="1">
                         <input type="radio" class="d-none d-sm-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Rochester</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Paris</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-gift-2"></i>
                         </span>
                       </label>
                       <label class="btn btn-sm btn-primary btn-simple" id="2">
                         <input type="radio" class="d-none" name="options">
-                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">New York State</span>
+                        <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">Île-de-France</span>
                         <span class="d-block d-sm-none">
                           <i class="tim-icons icon-tap-02"></i>
                         </span>
