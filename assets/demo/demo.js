@@ -182,8 +182,8 @@ demo = {
             zeroLineColor: "transparent",
           },
           ticks: {
-            suggestedMin: 60,
-            suggestedMax: 125,
+            suggestedMin: 97,
+            suggestedMax: 102,
             padding: 20,
             fontColor: "#9a9a9a"
           }
@@ -279,7 +279,7 @@ demo = {
           },
           ticks: {
             suggestedMin: 50,
-            suggestedMax: 125,
+            suggestedMax: 100,
             padding: 20,
             fontColor: "#9e9e9e"
           }
@@ -328,7 +328,7 @@ demo = {
           },
           ticks: {
             suggestedMin: 60,
-            suggestedMax: 120,
+            suggestedMax: 100,
             padding: 20,
             fontColor: "#9e9e9e"
           }
@@ -358,9 +358,9 @@ demo = {
     gradientStroke.addColorStop(0, 'rgba(119,52,169,0)'); //purple colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      labels: ['9 PM', '10 PM', '11 PM', '0 AM', '1AM', '2 AM'],
       datasets: [{
-        label: "Data",
+        label: "Temperature",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#d048b6',
@@ -374,7 +374,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [80, 100, 70, 80, 120, 80],
+        data: [98, 100, 99.5, 101.1, 100, 99.5],
       }]
     };
 
@@ -394,9 +394,9 @@ demo = {
     gradientStroke.addColorStop(0, 'rgba(66,134,121,0)'); //green colors
 
     var data = {
-      labels: ['JUL', 'AUG', 'SEP', 'OCT', 'NOV'],
+      labels: ['9 PM', '10 PM', '11 PM', '0 AM', '1AM', '2 AM'],
       datasets: [{
-        label: "My First dataset",
+        label: "Heart Rate",
         fill: true,
         backgroundColor: gradientStroke,
         borderColor: '#00d6b4',
@@ -410,7 +410,7 @@ demo = {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 15,
         pointRadius: 4,
-        data: [90, 27, 60, 12, 80],
+        data: [89, 78, 72, 56, 64, 77],
       }]
     };
 
@@ -484,7 +484,7 @@ demo = {
 
     var ctx = document.getElementById("CountryChart").getContext("2d");
 
-    var gradientStroke = ctx.createLinearGradient(0, 230, 0, 50);
+    var gradientStroke = ctx.createLinearGradient(0, 100, 0, 50);
 
     gradientStroke.addColorStop(1, 'rgba(29,140,248,0.2)');
     gradientStroke.addColorStop(0.4, 'rgba(29,140,248,0.0)');
@@ -498,9 +498,9 @@ demo = {
         display: false
       },
       data: {
-        labels: ['USA', 'GER', 'AUS', 'UK', 'RO', 'BR'],
+        labels: ['9 PM', '10 PM', '11 PM', '0 AM', '1AM', '2 AM'],
         datasets: [{
-          label: "Countries",
+          label: "Oxygen Saturation",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -508,7 +508,7 @@ demo = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [82, 80, 85, 79, 78, 82],
         }]
       },
       options: gradientBarChartConfiguration

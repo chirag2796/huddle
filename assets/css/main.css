@@ -121,3 +121,7 @@ thead tr{
 a .paginate_button.current{
     color:#000 !important;
 }
+
+.fixed-plugin {
+    cursor: pointer !important;
+}
