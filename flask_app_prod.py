@@ -43,4 +43,4 @@ def hcp_transferpatient():
 
 # start the server with the 'run()' method
 if __name__ == '__main__':
-    app.run(port=5001)
+    app.run()
