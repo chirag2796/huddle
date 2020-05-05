@@ -22,7 +22,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../static/img/surgery.png">
   <link rel="icon" type="image/png" href="../static/img/surgery.png">
   <title>
-    Transfer Patient
+    Huddle
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -38,24 +38,16 @@
 
 <body class="">
   <div class="wrapper">
-    <div class="main-panel">
+    <div class="main-panel"  style="background: #000;">
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <div style="width: 10%;">
-              <img src="../static/img/ai_loader_alpha.gif" style="width: 100%;">
-            </div>
-            <a class="navbar-brand" href="./" style="margin-left: 3.5%;">HUDDLE</a>
-          </div>
-        </div>
-      </nav>
+      <div id="particles-js" style="width:100%; height: 100%; position:fixed; z-index:1;">
+      </div>
 
-      <div class="content">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card">
+
+      <div style="width: 50%; float: left; padding-top: 10%; padding-left: 5%;">
+        <div>
+          <div>
+            <div class="card" style="padding:2%; border-radius: 6px; z-index:2;">
               <div class="card-header">
                 <h2 class="title">Welcome</h2>
                 <h4 class="body">Dashboard Access</h4>
@@ -67,52 +59,16 @@
 
         </div>
       </div>
+      <div style="width: 50%; float: left;">
+        <div style="width:90%; float: right; position:relative;">
+          <img src="../static/img/gif/peg_main2.gif" style="width:100%">
+          <img src="../static/img/huddle_banner.png" style="width:45%; position:absolute; left: 28%; top: 38%;">
+        </div>
+
+      </div>
     </div>
 
   </div>
-  </div>
-  <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <div style="padding: 5px;">
-        <img src="../static/img/assistant-logo.gif" style="width: 50px; height: 50px;">
-      </div>
-      <!--      <a href="#" data-toggle="dropdown">-->
-      <!--        <i class="fa fa-cog fa-2x"> </i>-->
-      <!--      </a>-->
-      <!--      <ul class="dropdown-menu">-->
-      <!--        <li class="header-title"> Sidebar Background</li>-->
-      <!--        <li class="adjustments-line">-->
-      <!--          <a href="javascript:void(0)" class="switch-trigger background-color">-->
-      <!--            <div class="badge-colors text-center">-->
-      <!--              <span class="badge filter badge-primary active" data-color="primary"></span>-->
-      <!--              <span class="badge filter badge-info" data-color="blue"></span>-->
-      <!--              <span class="badge filter badge-success" data-color="green"></span>-->
-      <!--            </div>-->
-      <!--            <div class="clearfix"></div>-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li class="adjustments-line text-center color-change">-->
-      <!--          <span class="color-label">LIGHT MODE</span>-->
-      <!--          <span class="badge light-badge mr-2"></span>-->
-      <!--          <span class="badge dark-badge ml-2"></span>-->
-      <!--          <span class="color-label">DARK MODE</span>-->
-      <!--        </li>-->
-      <!--        <li class="button-container">-->
-      <!--          <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>-->
-      <!--          <a href="https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">-->
-      <!--            Documentation-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li class="header-title">Thank you for 95 shares!</li>-->
-      <!--        <li class="button-container text-center">-->
-      <!--          <button id="twitter" class="btn btn-round btn-info"><i class="fab fa-twitter"></i> &middot; 45</button>-->
-      <!--          <button id="facebook" class="btn btn-round btn-info"><i class="fab fa-facebook-f"></i> &middot; 50</button>-->
-      <!--          <br>-->
-      <!--          <br>-->
-      <!--          <a class="github-button" href="https://github.com/creativetimofficial/black-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>-->
-      <!--        </li>-->
-      <!--      </ul>-->
-    </div>
   </div>
   <!--   Core JS Files   -->
   <script src="../static/js/core/jquery.min.js"></script>
@@ -124,6 +80,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
   <script src="../static/js/plugins/chartjs.min.js"></script>
+  <script src="../static/js/plugins/particles.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../static/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
@@ -240,6 +197,136 @@
         });
       });
     });
+
+    particlesJS("particles-js", {
+	"particles": {
+		"number": {
+			"value": 50,
+			"density": {
+				"enable": true,
+				"value_area": 800
+			}
+		},
+		"color": {
+			"value": "#bbb"
+		},
+		"shape": {
+			"type": "triangle",
+			"stroke": {
+				"width": 0,
+				"color": "#000000"
+			},
+			"polygon": {
+				"nb_sides": 5
+			},
+			"image": {
+				"src": "img/github.svg",
+				"width": 100,
+				"height": 100
+			}
+		},
+		"opacity": {
+			"value": 0.5,
+			"random": false,
+			"anim": {
+				"enable": false,
+				"speed": 1,
+				"opacity_min": 0.1,
+				"sync": false
+			}
+		},
+		"size": {
+			"value": 3,
+			"random": true,
+			"anim": {
+				"enable": false,
+				"speed": 40,
+				"size_min": 0.1,
+				"sync": false
+			}
+		},
+		"line_linked": {
+			"enable": true,
+			"distance": 150,
+			"color": "#ffffff",
+			"opacity": 0.4,
+			"width": 1
+		},
+		"move": {
+			"enable": true,
+			"speed": 1,
+			"direction": "none",
+			"random": false,
+			"straight": false,
+			"out_mode": "out",
+			"bounce": false,
+			"attract": {
+				"enable": false,
+				"rotateX": 600,
+				"rotateY": 1200
+			}
+		}
+	},
+	"interactivity": {
+		"detect_on": "canvas",
+		"events": {
+			"onhover": {
+				"enable": true,
+				"mode": "grab"
+			},
+			"onclick": {
+				"enable": true,
+				"mode": "push"
+			},
+			"resize": true
+		},
+		"modes": {
+			"grab": {
+				"distance": 150,
+				"line_linked": {
+					"opacity": 1
+				}
+			},
+			"bubble": {
+				"distance": 400,
+				"size": 40,
+				"duration": 2,
+				"opacity": 8,
+				"speed": 3
+			},
+			"repulse": {
+				"distance": 200,
+				"duration": 0.4
+			},
+			"push": {
+				"particles_nb": 4
+			},
+			"remove": {
+				"particles_nb": 2
+			}
+		}
+	},
+	"retina_detect": true
+});
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+	stats.begin();
+	stats.end();
+	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+		count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	}
+	requestAnimationFrame(update);
+};
+requestAnimationFrame(update);;
+
+
   </script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>

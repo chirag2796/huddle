@@ -11,7 +11,7 @@ def home():
 
 @app.route('/HA/login')
 def ha_login():
-    return render_template('/HA/login.html')  # render a template
+    return render_template('/HA/login_new.html')  # render a template
 
 @app.route('/HA/dashboard')
 def ha_dashboard():
@@ -27,7 +27,7 @@ def ha_allocate():
 
 @app.route('/HCP/login')
 def hcp_login():
-    return render_template('/HCP/login.html')  # render a template
+    return render_template('/HCP/login_new.html')  # render a template
 
 @app.route('/HCP/dashboard')
 def hcp_dashboard():
@@ -43,4 +43,4 @@ def hcp_transferpatient():
 
 # start the server with the 'run()' method
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

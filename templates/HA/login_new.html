@@ -1,0 +1,359 @@
+<!--
+=========================================================
+* * Black Dashboard - v1.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/black-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../static/img/surgery.png">
+  <link rel="icon" type="image/png" href="../static/img/surgery.png">
+  <title>
+    Huddle
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="../static/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../static/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../static/demo/demo.css" rel="stylesheet" />
+  <link href="../static/css/main.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="main-panel"  style="background: #000;">
+
+      <div id="particles-js" style="width:100%; height: 100%; position:fixed; z-index:1;">
+      </div>
+
+
+      <div style="width: 50%; float: left; padding-top: 10%; padding-left: 5%;">
+        <div>
+          <div>
+            <div class="card" style="padding:2%; border-radius: 6px; z-index:2;">
+              <div class="card-header">
+                <h2 class="title">Login</h2>
+              </div>
+              <div class="card-body">
+                <form>
+                  <!-- username -->
+                  <div class="col-md-6 pr-md-1" style="max-width: 75%;">
+                    <div class="form-group">
+                      <label>username</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <!-- password -->
+                  <div class="col-md-6 pr-md-1" style="max-width: 75%;">
+                    <div class="form-group">
+                      <label>password</label>
+                      <input type="password" class="form-control">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-fill btn-primary" onclick="window.location.href = './dashboard'">Confirm</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div style="width: 50%; float: left;">
+        <div style="width:90%; float: right; position:relative;">
+          <img src="../static/img/gif/peg_main2.gif" style="width:100%">
+          <img src="../static/img/huddle_banner.png" style="width:45%; position:absolute; left: 28%; top: 38%;">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../static/js/core/jquery.min.js"></script>
+  <script src="../static/js/core/popper.min.js"></script>
+  <script src="../static/js/core/bootstrap.min.js"></script>
+  <script src="../static/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../static/js/plugins/chartjs.min.js"></script>
+  <script src="../static/js/plugins/particles.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../static/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../static/js/black-dashboard.min.js?v=1.0.0"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../static/demo/demo.js"></script>
+  <script>
+    $(document).ready(function () {
+      $().ready(function () {
+        $sidebar = $('.sidebar');
+        $navbar = $('.navbar');
+        $main_panel = $('.main-panel');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+        sidebar_mini_active = true;
+        white_color = false;
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+
+
+        $('.fixed-plugin a').click(function (event) {
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .background-color span').click(function () {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data', new_color);
+          }
+
+          if ($main_panel.length != 0) {
+            $main_panel.attr('data', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data', new_color);
+          }
+        });
+
+        $('.switch-sidebar-mini input').on("switchChange.bootstrapSwitch", function () {
+          var $btn = $(this);
+
+          if (sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            sidebar_mini_active = false;
+            blackDashboard.showSidebarMessage('Sidebar mini deactivated...');
+          } else {
+            $('body').addClass('sidebar-mini');
+            sidebar_mini_active = true;
+            blackDashboard.showSidebarMessage('Sidebar mini activated...');
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function () {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function () {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+        });
+
+        $('.switch-change-color input').on("switchChange.bootstrapSwitch", function () {
+          var $btn = $(this);
+
+          if (white_color == true) {
+
+            $('body').addClass('change-background');
+            setTimeout(function () {
+              $('body').removeClass('change-background');
+              $('body').removeClass('white-content');
+            }, 900);
+            white_color = false;
+          } else {
+
+            $('body').addClass('change-background');
+            setTimeout(function () {
+              $('body').removeClass('change-background');
+              $('body').addClass('white-content');
+            }, 900);
+
+            white_color = true;
+          }
+
+
+        });
+
+        $('.light-badge').click(function () {
+          $('body').addClass('white-content');
+        });
+
+        $('.dark-badge').click(function () {
+          $('body').removeClass('white-content');
+        });
+      });
+    });
+
+    particlesJS("particles-js", {
+	"particles": {
+		"number": {
+			"value": 50,
+			"density": {
+				"enable": true,
+				"value_area": 800
+			}
+		},
+		"color": {
+			"value": "#bbb"
+		},
+		"shape": {
+			"type": "triangle",
+			"stroke": {
+				"width": 0,
+				"color": "#000000"
+			},
+			"polygon": {
+				"nb_sides": 5
+			},
+			"image": {
+				"src": "img/github.svg",
+				"width": 100,
+				"height": 100
+			}
+		},
+		"opacity": {
+			"value": 0.5,
+			"random": false,
+			"anim": {
+				"enable": false,
+				"speed": 1,
+				"opacity_min": 0.1,
+				"sync": false
+			}
+		},
+		"size": {
+			"value": 3,
+			"random": true,
+			"anim": {
+				"enable": false,
+				"speed": 40,
+				"size_min": 0.1,
+				"sync": false
+			}
+		},
+		"line_linked": {
+			"enable": true,
+			"distance": 150,
+			"color": "#ffffff",
+			"opacity": 0.4,
+			"width": 1
+		},
+		"move": {
+			"enable": true,
+			"speed": 1,
+			"direction": "none",
+			"random": false,
+			"straight": false,
+			"out_mode": "out",
+			"bounce": false,
+			"attract": {
+				"enable": false,
+				"rotateX": 600,
+				"rotateY": 1200
+			}
+		}
+	},
+	"interactivity": {
+		"detect_on": "canvas",
+		"events": {
+			"onhover": {
+				"enable": true,
+				"mode": "grab"
+			},
+			"onclick": {
+				"enable": true,
+				"mode": "push"
+			},
+			"resize": true
+		},
+		"modes": {
+			"grab": {
+				"distance": 150,
+				"line_linked": {
+					"opacity": 1
+				}
+			},
+			"bubble": {
+				"distance": 400,
+				"size": 40,
+				"duration": 2,
+				"opacity": 8,
+				"speed": 3
+			},
+			"repulse": {
+				"distance": 200,
+				"duration": 0.4
+			},
+			"push": {
+				"particles_nb": 4
+			},
+			"remove": {
+				"particles_nb": 2
+			}
+		}
+	},
+	"retina_detect": true
+});
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+	stats.begin();
+	stats.end();
+	if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+		count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	}
+	requestAnimationFrame(update);
+};
+requestAnimationFrame(update);;
+
+
+  </script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "black-dashboard-free"
+      });
+  </script>
+</body>
+
+</html>
